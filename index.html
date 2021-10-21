@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Mental Health Connections</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap" rel="stylesheet"> <!-- New font -->
+</head>
+
+<body>
+<header id="pageHeader"> <a href="https://opal.ils.unc.edu/~gibsonfa/INLS572-mentalhealth/" class="hypr"> Mental Health Connections </a> </header>
+
+<div id="siteIcon"> <img class="contain" src="images/circle-tree.png" alt=""> </div>
+
+<div id="mainArticle" class="page1">
+	<div id="pg1pic">
+	<img class="this" src="images/homepage_group1.jpg" alt=""> <!-- add hover that shows source -->
+	</div>
+	<div id="tpright1">
+		 <img class="this2" src="images/Picture1.png" style="object-fit: fill;" alt="">
+	</div>
+
+	<div id="btm1">
+				<p> Sometimes its ok not to be ok. Whether you'd like to connect with others, post your thoughts, or just look around, we hope you can find some solace on this sight.</p> 
+				<p> To the left there are quick links to the National Alliance on Mental Illness (NAMI), VeryWellMind, and Psychology Today, which are three of the most respected digital resources that have information on anything psychology and mental wellness related. The National Alliance on Mental Illness (NAMI) is the nation's leading non-profit advocacy organization for mental health, and you can go there to learn more about mental illness, get involved, and keep up with relevant news on the topic. VeryWellMind and is a digital publication and wellness site that has articles about mindfulness and various self-improvement topics for those with or without mental illness. Lastly, Psychology Today is similar with the added feature of hosting therapists to for prospective clients to get connected with.</p>
+
+<button id="btn" onclick="Reveal1()">See More</button>
+			<div id = "show" style="display: none">
+			<p> <a class="hypr-hov" href="fact-sheet/facts.html">Click Here </a> to learn about anxiety and depression.</p>
+			<p><a class="hypr-hov" href="fact-sheet/page3.html">Click Here </a> for more resources and content focused on improving mental health. </p></div>
+</div>
+</div>
+
+<div id="mainNav"> 
+	<div class="flex-container" id="yellow-bg">
+	<h3> <a class="nav-pg-txt" href="/~gibsonfa/INLS572-mentalhealth/fact-sheet/facts.html"> Common Illnesses </a> </h3>
+	<h3> <a class="nav-pg-txt" href="/~gibsonfa/INLS572-mentalhealth/fact-sheet/page3.html"> Coping Strategies </a> </h3>
+	<p class="quickr"> Quick Resources </p>
+	<a target="_blank" href="https://www.nami.org/Home"> <img class="nav-pics" src= "/~gibsonfa/INLS572-mentalhealth/images/nami.png" alt=""> </a> <br> 
+	<a target="_blank" href="https://www.verywellmind.com/"> <img class="nav-pics" src= "/~gibsonfa/INLS572-mentalhealth/images/verywellmind5.png" alt=""> </a> <br> 
+	<a target="_blank" href="https://www.psychologytoday.com/us"> <img class="nav-pics" src="/~gibsonfa/INLS572-mentalhealth/images/psychologytoday.png" alt=""> </a> <br>
+	<p style="color: black;"> SAMHSA National Helpine: <span style="font-weight: bold;">1-800-662-4357</span></p>
+	</div>
+</div>
+
+
+<footer id="pageFooter">
+	<p> Last updated on
+	<script>
+		<!-- Display Date -->
+		<!-- This script and many more are available free online at -->
+		<!-- The JavaScript Source!! https://javascript.internet.com -->
+		<!-- Begin
+			var months = new Array(13);
+			months[1] = "January";
+			months[2] = "February";
+			months[3] = "March";
+			months[4] = "April";
+			months[5] = "May";
+			months[6] = "June";
+			months[7] = "July";
+			months[8] = "August";
+			months[9] = "September";
+			months[10] = "October";
+			months[11] = "November";
+			months[12] = "December";
+			var dateObj = new Date(document.lastModified)
+			var lmonth = months[dateObj.getMonth() + 1]
+			var date = dateObj.getDate()
+			var fyear = dateObj.getYear()
+			if (fyear < 2000) fyear = fyear + 1900
+			document.write("" + lmonth + " " + date + ", " + fyear);
+
+		// End -->
+	</script></p>
+</footer>
+<script>
+
+function Reveal1() {
+  var x = document.getElementById("show");
+  var b = document.getElementById("btn");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    b.innerHTML = "See less";
+  } else {
+    x.style.display = "none";
+    b.innerHTML = "See more";
+  }
+} 
+</script>
+
+</body>
+</html>
+
+
+
+
+

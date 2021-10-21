@@ -1,0 +1,115 @@
+html{overflow-y:scroll;}
+  
+header, footer, article, nav, div {
+  padding: .8em;
+  background: whitesmoke;
+  font-family: Verdana;
+  }
+footer{text-align: center;}
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+body{background:  #0f0f0f ;
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "icon article"
+    "nav article"
+    "footer footer";
+  grid-template-rows: 90px 150px 1fr 50px;  
+  grid-template-columns: 15% 1fr;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  height: 100vh;
+  margin: 0;}
+
+
+#pageHeader {
+  grid-area: header;
+  background:  #4286f4;
+font-size: 40px;
+text-align: center;
+color: whitesmoke;}
+#siteIcon { 
+  grid-area: icon;
+  }
+#pageFooter {
+  grid-area: footer; background: #ff5c5c;
+  }
+
+#mainNav { 
+  grid-area: nav; text-align: center;
+  background:  #ffff66; color: #4286f4;}
+#yellow-bg{background: #ffff66;} /* legacy ? */
+
+/* navigation */
+.nav-pics{height: 80%; width: 100%}
+h3{text-align: center; margin-top: 5px; margin-bottom: 8px;}
+ul {list-style-type: none; padding: 20px;}
+.nav_list{list-style-type: none;}
+.nav-pg-txt{overflow-wrap: break-word; text-decoration: underline; color: #4286f4}
+.nav-pg-txt:hover{color: orange;}
+
+#mainArticle {
+  grid-area: article;}
+
+.img_contain{height: 50%; justify-content: left; display: flex; flex-direction: row;} /* page1 */
+.flex-container{display: flex; flex-direction: column; flex-wrap: wrap;} /* legacy for nav*/
+.pic-box{width: 30%; height: 40%;} /* page2 */
+.descr{width: 35%;} /* page2 */
+
+/* misc */
+.hypr{text-decoration: none; color: whitesmoke;}
+.hypr-hov{text-decoration: none; color: #4286f4; text-align: center;}
+.hypr-hov:hover{color: orange;}
+
+
+
+
+.page3{display: grid; width: 100%; 
+  grid-template-areas: 
+  "l r r" 
+  "l v v" 
+  "l v v";        
+  grid-template-rows: 40% 20% 1fr;
+  grid-template-columns: 45% 30% 1fr;
+  grid-row-gap: 2px; grid-column-gap: 2px;}
+
+#links{grid-area: l; text-align: center;}
+#upright{grid-area: r; text-align: center ;}
+#aud{grid-area: v;}
+
+
+
+.page1{display: grid; width: 100%;
+grid-template-areas: 
+"i t"
+"bt bt";
+grid-template-columns: 50% 1fr;
+grid-template-rows: 50% 1fr;  
+grid-row-gap: 2px; grid-column-gap: 2px;}
+
+#pg1pic{grid-area: i;}
+#tpright1{grid-area: t;}
+#btm1{grid-area: bt;}
+
+.quickr{color: black; text-decoration: underline;}
+
+#aud-align{display: flex; height: 80%;
+  justify-content: center;
+  align-items: center; flex-direction: column;}
+
+
+
+
+
+
+
+
+
+
+
+
